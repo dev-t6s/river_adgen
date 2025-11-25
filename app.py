@@ -31,7 +31,7 @@ def load_safe_image(path: Path) -> Image.Image:
 
 
 async def gemini_response(
-    prompt: str, images: List[Union[bytes, Image.Image]] = [], model="gemini-2.5-flash"
+    prompt: str, images: List[Union[bytes, Image.Image]] = [], model="gemini-3-pro-preview"
 ) -> tuple[str, dict]:
     """Returns (response_text, usage_dict) where usage_dict contains 'input_tokens' and 'output_tokens'"""
     pil_images = []
